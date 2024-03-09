@@ -206,20 +206,31 @@ class ApiController extends Controller
                 return response()->json(['message' => "Anda Tidak Dapat input Absen Mengajar pada Hari '-$hari-', Hari tersebut bukanlah hari yang dijadwalkan untuk mengajar!"], 401);
             }
 
-            if ($validation->count() >= 3){
-                return response()->json(['message' => "Tidak Dapat Absen Lebih dari 3 Kali dalam Hari Yang Sama, Anda mencoba menginputkan absen pada tanggal $tanggal, absen anda sudah terhitung 3 JPL pada tanggal tersebut"], 401);
+            if (auth()->user()->pokjar == "harbang") {
+                if ($validation->count() >= 3){
+                    return response()->json(['message' => "Tidak Dapat Absen Lebih dari 3 Kali dalam Hari Yang Sama, Anda mencoba menginputkan absen pada tanggal $tanggal, absen anda sudah terhitung 3 JPL pada tanggal tersebut"], 401);
+                    
+                }
+                if($validation3->count() > 0){
+                    $attempOn = $validation3->first()->user_id;
+                    $nama = User::find($attempOn)->name;
+                    return response()->json(['message' => "Error, Anda mencoba absen mengajar kelas $kelas, namun kelas tersebut sudah diajar oleh $nama Pada waktu yang sama ($tanggal, $waktu)"], 401);
+                }
                 
+            } else {
+                if ($validation->count() >= 1){
+                    return response()->json(['message' => "Tidak Dapat Absen Lebih dari 1 Kali dalam Hari Yang Sama, Anda mencoba menginputkan absen pada tanggal $tanggal, absen anda sudah terhitung 3 JPL pada tanggal tersebut"], 401);
+                    
+                }
             }
+
+            
 
             if ($validation2->count() > 0){
                 return response()->json(['message' => "Tidak Dapat Absen Pada Jam yang Sama! Anda Sudah Absen di Jam $waktu untuk absen pada tanggal $tanggal"], 401);
             }
 
-            if($validation3->count() > 0){
-                $attempOn = $validation3->first()->user_id;
-                $nama = User::find($attempOn)->name;
-                return response()->json(['message' => "Error, Anda mencoba absen mengajar kelas $kelas, namun kelas tersebut sudah diajar oleh $nama Pada waktu yang sama ($tanggal, $waktu)"], 401);
-            }
+            
 
             //Validation Lvl-4
             $tanggalHariIni = new \DateTime($tanggal);

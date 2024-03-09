@@ -64,19 +64,27 @@ class AbsenController extends Controller
             return redirect()->back()->with('message', "Anda Tidak Dapat input Absen Mengajar pada Hari '-$hari-', Hari tersebut bukanlah hari yang dijadwalkan untuk mengajar!");
         }
         //Validation Lvl-1
-        if ($validation->count() >= 3){
-            return redirect()->back()->with('message', "Tidak Dapat Absen Lebih dari 3 Kali dalam Hari Yang Sama, Anda mencoba menginputkan absen pada tanggal $tanggal, absen anda sudah terhitung 3 JPL pada tanggal tersebut");
+        if (auth()->user()->pokjar == "harbang") {
+            if ($validation->count() >= 3){
+                return redirect()->back()->with('message', "Tidak Dapat Absen Lebih dari 3 Kali dalam Hari Yang Sama, Anda mencoba menginputkan absen pada tanggal $tanggal, absen anda sudah terhitung 3 JPL pada tanggal tersebut");
+            }
+            //Validation Lvl-3
+            if($validation3->count() > 0){
+                $attempOn = $validation3->first()->user_id;
+                $nama = User::find($attempOn)->name;
+                return redirect()->back()->with('message', "Error, Anda mencoba absen mengajar kelas $kelas, namun kelas tersebut sudah diajar oleh $nama Pada waktu yang sama ($tanggal, $waktu)");
+            }
+        } else {
+            if ($validation->count() >= 1){
+                return redirect()->back()->with('message', "Tidak Dapat Absen Lebih dari 1 Kali dalam Hari Yang Sama, Anda mencoba menginputkan absen pada tanggal $tanggal, absen anda sudah terhitung 3 JPL pada tanggal tersebut");
+            }
         }
+        
         //Validation Lvl-2
         if ($validation2->count() > 0){
             return redirect()->back()->with('message', "Tidak Dapat Absen Pada Jam yang Sama! Anda Sudah Absen di Jam $waktu untuk absen pada tanggal $tanggal");
         }
-        //Validation Lvl-3
-        if($validation3->count() > 0){
-            $attempOn = $validation3->first()->user_id;
-            $nama = User::find($attempOn)->name;
-            return redirect()->back()->with('message', "Error, Anda mencoba absen mengajar kelas $kelas, namun kelas tersebut sudah diajar oleh $nama Pada waktu yang sama ($tanggal, $waktu)");
-        }
+        
         //Validation Lvl-4
         $tanggalHariIni = new \DateTime($tanggal);
         $namaHari = date('w', strtotime($tanggal));

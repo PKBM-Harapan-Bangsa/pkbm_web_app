@@ -161,9 +161,12 @@ Toggle modal
 
     
 
-         
+
 
     <div>
+    @if(Auth::user()->pokjar != "harbang")
+    <div>Tidak</div>
+    @else
         <div class="w-full p-2">
             <div class="w-full rounded-md border-2 border-teal-200 p-2 shadow-lg">
                 <p class="font-semibold mb-1">Pendapatan Anda</p>
@@ -208,6 +211,7 @@ Toggle modal
 
             </div>
         </div>
+    @endif
 
 
 
@@ -258,7 +262,7 @@ Toggle modal
                 </table>
                 <div class="w-full text-center mt-4 mb-1">
 
-                    <a href="{{ route('detail.absen') }}" class="text-sm rounded-lg px-2 py-1.5 shadow hover:shadow-xl text-center focus:ring focus:ring-offset-2">Lihat Selengkapnya</a>
+                    <a href="{{ route('detail.absen') }}" class="text-sm rounded-lg px-2 py-1.5 shadow hover:shadow-xl text-center focus:ring focus:ring-offset-2">Lihat Absen Anda Selengkapnya</a>
                 </div>
             </div>
         </div>

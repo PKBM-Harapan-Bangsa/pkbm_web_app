@@ -137,8 +137,12 @@ class ApiController extends Controller
                 ->whereBetween('tanggal', [$tanggalAwal, $tanggalAkhir])
                 ->get();
 
-
-            $penghasilan = $BulanIni->count() * $user->index;
+            
+            if ($user->pokjar != "harbang") {
+                $penghasilan = 0;
+            } else {
+                $penghasilan = $BulanIni->count() * $user->index;
+            }
             
             return response()->json([
                 'user' => [

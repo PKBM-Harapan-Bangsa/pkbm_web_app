@@ -67,12 +67,13 @@ class HomeController extends Controller
             $absensiQuery = [];
             
             foreach ($months as $month) {
-                $startOfMonth = Carbon::createFromFormat('Y-m', "$year-$month")->startOfMonth();
+                $startOfMonth = Carbon::create($year, $month, 1, 0, 0, 0, 'Asia/Jakarta')->startOfMonth();
                 $endOfMonth = $startOfMonth->copy()->endOfMonth();
 
                 $absensiQuery[] = function ($query) use ($startOfMonth, $endOfMonth){
                     $query->whereBetween('tanggal', [$startOfMonth, $endOfMonth]);
                 };
+                
             }
 
             $userQuery->with(['absensi' => function ($query) use ($absensiQuery) {

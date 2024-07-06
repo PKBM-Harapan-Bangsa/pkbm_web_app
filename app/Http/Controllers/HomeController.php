@@ -49,6 +49,36 @@ class HomeController extends Controller
     }
 
     public function admin_index(Request $request){
+
+        if ($request->input('start') && $request->input("end")) {
+            $start = $request->input('start');
+            $end = $request->input('end');
+            $startDate = Carbon::createFromFormat('m/d/Y', $start);
+            $endDate = Carbon::createFromFormat('m/d/Y', $end);
+            // $user = User::where('role', 0)->whereRelation('absensi', 'tanggal', '>=', Carbon::createFromFormat('m/d/Y', $request->input('start')) )->whereRelation('absensi', 'tanggal', '<=', Carbon::createFromFormat('m/d/Y', $request->input('end')))->get();
+            $user = User::where('role', 0)
+                ->with(['absensi' => function($query) use ($startDate, $endDate) {
+                    $query->whereBetween('tanggal', [$startDate, $endDate]);
+                }])
+                ->get();
+            $months = [];
+            $currentDate = $startDate->copy();
+            while ($currentDate <= $endDate) {
+                $months[] = $currentDate->format('m');
+                $currentDate->addMonth();
+            }
+            // $months = [$startDate->format('m'), $endDate->format('m')];
+            $year = $startDate->format('Y');
+
+            if ($request->input('cetak') == 'pdf') {
+                return view('admin.pdf', compact('user', 'year', 'months', 'start', 'end'));
+            }
+
+            return view('admin.dashboard', compact('user', 'year', 'months', 'start', 'end'));
+            
+            // dd($user, $request->input('start'), $request->input('end'), Carbon::createFromFormat('m/d/Y', $request->input('start')));
+        }
+
         $year = $request->input('tahun', Carbon::now()->format('Y'));
         $months = $request->input('bulan', []);
 
@@ -92,7 +122,7 @@ class HomeController extends Controller
         if ($request->input('cetak') == 'pdf') {
             return view('admin.pdf', compact('user', 'year', 'months'));
         }
-
+        // dd($user);
         return view('admin.dashboard', compact('user', 'year', 'months'));
     }
 

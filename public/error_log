@@ -10,3 +10,43 @@
 [20-Jan-2024 16:40:48 UTC] PHP Fatal error:  Cannot declare class App\Http\Controllers\ApiTwoController, because the name is already in use in /home/pkbmharb/pkbm_app/app/Http/Controllers/ApiController.php on line 14
 [20-Jan-2024 16:41:12 UTC] PHP Fatal error:  Cannot declare class App\Http\Controllers\ApiTwoController, because the name is already in use in /home/pkbmharb/pkbm_app/app/Http/Controllers/ApiController.php on line 14
 [20-Jan-2024 16:45:54 UTC] PHP Fatal error:  Cannot declare class App\Http\Controllers\ApiTwoController, because the name is already in use in /home/pkbmharb/pkbm_app/app/Http/Controllers/ApiController.php on line 14
+[09-Mar-2024 15:34:03 UTC] PHP Warning:  require_once(/home/pkbmharb/public_html/../pkbm_app/bootstrap/app.php): Failed to open stream: No such file or directory in /home/pkbmharb/public_html/index.php on line 47
+[09-Mar-2024 15:34:03 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/pkbmharb/public_html/../pkbm_app/bootstrap/app.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/pkbmharb/public_html/index.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/pkbmharb/public_html/index.php on line 47
+[09-Mar-2024 15:34:08 UTC] PHP Warning:  require_once(/home/pkbmharb/public_html/../pkbm_app/bootstrap/app.php): Failed to open stream: No such file or directory in /home/pkbmharb/public_html/index.php on line 47
+[09-Mar-2024 15:34:08 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/pkbmharb/public_html/../pkbm_app/bootstrap/app.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/pkbmharb/public_html/index.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/pkbmharb/public_html/index.php on line 47
+[09-Mar-2024 15:34:10 UTC] PHP Warning:  require_once(/home/pkbmharb/public_html/../pkbm_app/bootstrap/app.php): Failed to open stream: No such file or directory in /home/pkbmharb/public_html/index.php on line 47
+[09-Mar-2024 15:34:10 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/pkbmharb/public_html/../pkbm_app/bootstrap/app.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/pkbmharb/public_html/index.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/pkbmharb/public_html/index.php on line 47
+[09-Mar-2024 15:34:11 UTC] PHP Warning:  require_once(/home/pkbmharb/public_html/../pkbm_app/bootstrap/app.php): Failed to open stream: No such file or directory in /home/pkbmharb/public_html/index.php on line 47
+[09-Mar-2024 15:34:11 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/pkbmharb/public_html/../pkbm_app/bootstrap/app.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/pkbmharb/public_html/index.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/pkbmharb/public_html/index.php on line 47
+[09-Mar-2024 15:34:13 UTC] PHP Warning:  require_once(/home/pkbmharb/public_html/../pkbm_app/bootstrap/app.php): Failed to open stream: No such file or directory in /home/pkbmharb/public_html/index.php on line 47
+[09-Mar-2024 15:34:13 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/pkbmharb/public_html/../pkbm_app/bootstrap/app.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/pkbmharb/public_html/index.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/pkbmharb/public_html/index.php on line 47
+[09-Mar-2024 15:34:13 UTC] PHP Warning:  require_once(/home/pkbmharb/public_html/../pkbm_app/bootstrap/app.php): Failed to open stream: No such file or directory in /home/pkbmharb/public_html/index.php on line 47
+[09-Mar-2024 15:34:13 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/pkbmharb/public_html/../pkbm_app/bootstrap/app.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/pkbmharb/public_html/index.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/pkbmharb/public_html/index.php on line 47
+[09-Mar-2024 15:34:14 UTC] PHP Warning:  require_once(/home/pkbmharb/public_html/../pkbm_app/bootstrap/app.php): Failed to open stream: No such file or directory in /home/pkbmharb/public_html/index.php on line 47
+[09-Mar-2024 15:34:14 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/pkbmharb/public_html/../pkbm_app/bootstrap/app.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/pkbmharb/public_html/index.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/pkbmharb/public_html/index.php on line 47
+[09-Mar-2024 15:34:37 UTC] PHP Warning:  require_once(/home/pkbmharb/public_html/../pkbm_app/bootstrap/app.php): Failed to open stream: No such file or directory in /home/pkbmharb/public_html/index.php on line 47
+[09-Mar-2024 15:34:37 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/pkbmharb/public_html/../pkbm_app/bootstrap/app.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/pkbmharb/public_html/index.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/pkbmharb/public_html/index.php on line 47

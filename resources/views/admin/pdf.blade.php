@@ -11,6 +11,9 @@
         <div>
             <h2>Rekap JPL Tutor PKBM Harapan Bangsa</h2>
             <h3>Bulan @foreach($months as $bulan) {{ $bulan }},  @endforeach Tahun {{ $year }}</h3>
+            @if(isset($start))
+            <h3>Per Tanggal {{ $start }} hingga {{$end}}</h3>
+            @endif
             <h3></h3>
         </div>
     </div>

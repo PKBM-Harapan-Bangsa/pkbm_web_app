@@ -24,4 +24,3 @@ RewriteCond %{HTTP:X-Forwarded-SSL} !on
 RewriteCond %{HTTP_HOST} ^pkbmharbang\.com$ [OR]
 RewriteCond %{HTTP_HOST} ^www\.pkbmharbang\.com$
 RewriteRule ^/?$ "https\:\/\/pkbmharbang\.com\/" [R=301,L]
-

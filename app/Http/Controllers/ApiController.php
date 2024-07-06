@@ -309,7 +309,7 @@ class ApiController extends Controller
                 $newFileName = "{$userId}-{$username}-{$date}.jpg";
 
                 // Pindahkan file ke direktori public/img/ dengan nama yang baru
-                $request->file('image')->move(public_path('img'), $newFileName);
+                $request->file('image')->move('img', $newFileName);
 
                 if ($U->foto !== "default.jpg") {
                     unlink(public_path('img/').$U->foto);

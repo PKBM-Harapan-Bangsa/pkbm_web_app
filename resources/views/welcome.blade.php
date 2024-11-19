@@ -12,6 +12,9 @@
 <meta property="og:image" content="https://pkbmharbang.com/img/logo.png">
 <meta property="og:url" content="https://pkbmharbang.com">
 <meta property="og:site_name" content="PKBM Harapan Bangsa">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9232832351894299"
+     crossorigin="anonymous"></script>
+     <meta name="google-adsense-account" content="ca-pub-9232832351894299">
 
 
 <script type="application/ld+json">
@@ -406,6 +409,75 @@
 
                         <div class="justify-center text-gray-600">
 							<div class=" MxG1ClE4KPrIvlL5_Q5x XdjN1uxS_rsa3F90ox40 K1PPCJwslha8GUIvV_Cr eCx_6PNzncAD5yo7Qcic">Tutor Mapel TIK</div>
+                        </div>
+                    </div>
+                    </div>
+                </figure>
+                
+                
+                <figure class="duration-700 hidden ease-in-out " data-carousel-item="">
+                    <div class="grid grid-cols-2 gap-2 px-4">
+
+                    
+                    <!-- NURYADI -->
+                    <div class="bg-white h-80 sm:h-full shadow-xl p-2 sm:p-4 border  rounded-xl">
+                    	<div style="background-image: url('/tutor/nuryadi.jpg');" class="bg-cover rounded-t-lg bg-top bg-no-repeat w-full h-48 sm:h-64"></div>
+	                    <figcaption class="kqgYncRJQ7spwKfig6It _WclR59Ji8jwfmjPtOei neyUwteEn7DOg9pBSJJE pSnS_Sqc_IApyugF_VpP B1cgbA6Bb4LQo0qFJKck">
+	                        <div class="mt-3 font-bold">
+	                            <div class=" _A6LflweZRUwrcL6M2Tk g3OYBOqwXUEW4dRGogkH a0Ed69aMSu0vgf4oysz0">Nuryadi, S.I.Pust</div>
+	                        </div>
+	                    </figcaption>
+                    
+                        <div class="justify-center text-gray-600">
+							<div class=" MxG1ClE4KPrIvlL5_Q5x XdjN1uxS_rsa3F90ox40 K1PPCJwslha8GUIvV_Cr eCx_6PNzncAD5yo7Qcic">Tutor Pokjar Tambak</div>
+                        </div>
+                    </div>
+                    
+                    <!-- CATUR -->
+                    <div class="bg-white h-80 sm:h-full shadow-xl p-2 sm:p-4 border  rounded-xl">
+                    	<div style="background-image: url('/tutor/catur.jpg');" class="bg-cover rounded-t-lg bg-top bg-no-repeat w-full h-48 sm:h-64"></div>
+	                    <figcaption class="kqgYncRJQ7spwKfig6It _WclR59Ji8jwfmjPtOei neyUwteEn7DOg9pBSJJE pSnS_Sqc_IApyugF_VpP B1cgbA6Bb4LQo0qFJKck">
+	                        <div class="mt-3 font-bold">
+	                            <div class=" _A6LflweZRUwrcL6M2Tk g3OYBOqwXUEW4dRGogkH a0Ed69aMSu0vgf4oysz0">Catur Wijayanto, S.Pd.I</div>
+	                        </div>
+	                    </figcaption>
+
+                        <div class="justify-center text-gray-600">
+							<div class=" MxG1ClE4KPrIvlL5_Q5x XdjN1uxS_rsa3F90ox40 K1PPCJwslha8GUIvV_Cr eCx_6PNzncAD5yo7Qcic">Tutor Mapel PAI - Suro</div>
+                        </div>
+                    </div>
+                    </div>
+                </figure>
+                
+                <figure class="duration-700 hidden ease-in-out " data-carousel-item="">
+                    <div class="grid grid-cols-2 gap-2 px-4">
+
+                    
+                    <!-- UMI ROFIKOH -->
+                    <div class="bg-white h-80 sm:h-full shadow-xl p-2 sm:p-4 border  rounded-xl">
+                    	<div style="background-image: url('/tutor/umi_rofikoh.jpg');" class="bg-cover rounded-t-lg bg-top bg-no-repeat w-full h-48 sm:h-64"></div>
+	                    <figcaption class="kqgYncRJQ7spwKfig6It _WclR59Ji8jwfmjPtOei neyUwteEn7DOg9pBSJJE pSnS_Sqc_IApyugF_VpP B1cgbA6Bb4LQo0qFJKck">
+	                        <div class="mt-3 font-bold">
+	                            <div class=" _A6LflweZRUwrcL6M2Tk g3OYBOqwXUEW4dRGogkH a0Ed69aMSu0vgf4oysz0">Umi Rofikoh, S.E</div>
+	                        </div>
+	                    </figcaption>
+                    
+                        <div class="justify-center text-gray-600">
+							<div class=" MxG1ClE4KPrIvlL5_Q5x XdjN1uxS_rsa3F90ox40 K1PPCJwslha8GUIvV_Cr eCx_6PNzncAD5yo7Qcic">Tutor Pokjar Sumpiuh</div>
+                        </div>
+                    </div>
+                    
+                    <!-- ------ -->
+                    <div class="bg-white h-80 sm:h-full shadow-xl p-2 sm:p-4 border  rounded-xl">
+                    	<div style="background-image: url('/tutor/none');" class="bg-cover rounded-t-lg bg-top bg-no-repeat w-full h-48 sm:h-64"></div>
+	                    <figcaption class="kqgYncRJQ7spwKfig6It _WclR59Ji8jwfmjPtOei neyUwteEn7DOg9pBSJJE pSnS_Sqc_IApyugF_VpP B1cgbA6Bb4LQo0qFJKck">
+	                        <div class="mt-3 font-bold">
+	                            <div class=" _A6LflweZRUwrcL6M2Tk g3OYBOqwXUEW4dRGogkH a0Ed69aMSu0vgf4oysz0">-----------</div>
+	                        </div>
+	                    </figcaption>
+
+                        <div class="justify-center text-gray-600">
+							<div class=" MxG1ClE4KPrIvlL5_Q5x XdjN1uxS_rsa3F90ox40 K1PPCJwslha8GUIvV_Cr eCx_6PNzncAD5yo7Qcic">-----------</div>
                         </div>
                     </div>
                     </div>
